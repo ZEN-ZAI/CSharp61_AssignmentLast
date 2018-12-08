@@ -17,8 +17,6 @@ namespace Bestty
             Graph Graph = new Graph();
             GameSystem GameSystem = new GameSystem() { Map = Map, Player = Player , Graph  = Graph };
             Display Display = new Display { GameSystem = GameSystem };
-            //Map.insertKey(21, 9);
-            //Map.insertExit(11, 19);
             GameSystem.Setup();
             while (true)
             {

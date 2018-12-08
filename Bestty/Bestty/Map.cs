@@ -49,20 +49,6 @@ namespace Bestty
             }
         }
 
-        public void insertKey(int x, int y)
-        {
-            keyPositionX = x;
-            keyPositionY = y;
-            map[y, x] = " K";
-        }
-
-        public void insertExit(int x, int y)
-        {
-            ExitPositionX = x;
-            ExitPositionY = y;
-            map[y, x] = " X";
-        }
-
         public void InsertCharacter(int positionX, int positionY, string character)
         {
             map[positionY, positionX] = character;

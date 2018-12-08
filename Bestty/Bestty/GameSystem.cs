@@ -15,10 +15,6 @@ namespace Bestty
         public delegate void state();
         public state active;
 
-        public GameSystem()
-        {
-        }
-
         public void Setup()
         {
             Player.inMap = "Map0";
