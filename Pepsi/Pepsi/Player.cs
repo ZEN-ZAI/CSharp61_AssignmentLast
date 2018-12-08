@@ -4,26 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bestty
+namespace Pepsi
 {
-    class Player
+    class Player: Character
     {
         public Map Map { get; set; }
 
-        public string character { get; set; }
-        public string inMap { get; set; }
-        public int positionX { get; set; } = 2;
-        public int positionY { get; set; } = 2;
-        public int old_positionX { get; set; }
-        public int old_positionY { get; set; }
-
-        public bool keyM1 = false;
-        public bool keyM2 = false;
-
-        public Player(string character)
-        {
-            this.character = character;
-        }
+        public Player(string character) : base(character) { }
 
         public void move()
         {

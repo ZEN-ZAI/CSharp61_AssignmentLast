@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71A59C08-C923-41C1-82AA-C1E54C43C733}</ProjectGuid>
+    <ProjectGuid>{98E73A22-679B-4167-8697-52CDA78D7850}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Bestty</RootNamespace>
-    <AssemblyName>Bestty</AssemblyName>
+    <RootNamespace>Pepsi</RootNamespace>
+    <AssemblyName>Pepsi</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character.cs" />
     <Compile Include="Display.cs" />
     <Compile Include="GameSystem.cs" />
     <Compile Include="Graph.cs" />

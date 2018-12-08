@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bestty
+namespace Pepsi
 {
     public class Graph
     {
@@ -20,10 +20,10 @@ namespace Bestty
                 }
             }
 
-            AddGraph(0, 1, new Data { y = 5, x = 5, map = "Map1" }, new Data { y = 5, x = 5, map = "Map0" });
-            AddGraph(0, 2, new Data { y = 5, x = 20, map = "Map2" }, new Data { y = 5, x = 20, map = "Map0" });
-            AddGraph(0, 3, new Data { y = 20, x = 5, map = "Map3" }, new Data { y = 20, x = 5, map = "Map0" });
-            AddGraph(0, 4, new Data { y = 20, x = 20, map = "Map4" }, new Data { y = 20, x = 20, map = "Map0" });
+            AddGraph(0, 1, new Data { y = 20, x = 37, map = "Stage1" }, new Data { y = 19, x = 2, map = "StageStart" });
+            AddGraph(1, 2, new Data { y = 20, x = 37, map = "Stage2" }, new Data { y = 19, x = 2, map = "Stage1" });
+            AddGraph(2, 3, new Data { y = 37, x = 19, map = "Stage3" }, new Data { y = 2, x = 19, map = "Stage2" });
+            AddGraph(3, 4, new Data { y = 20, x = 2, map = "StageBoss" }, new Data { y = 0, x = 0, map = "Stage3" });
         }
 
         public void AddGraph(int map1, int map2, Data map1to2, Data map2to1)
