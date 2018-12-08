@@ -22,8 +22,6 @@ namespace Bestty
 
             AddGraph(0, 1, new Data { y = 5, x = 5, map = "Map1" }, new Data { y = 5, x = 5, map = "Map0" });
             AddGraph(0, 2, new Data { y = 5, x = 20, map = "Map2" }, new Data { y = 5, x = 20, map = "Map0" });
-            AddGraph(0, 3, new Data { y = 20, x = 5, map = "Map3" }, new Data { y = 20, x = 5, map = "Map0" });
-            AddGraph(0, 4, new Data { y = 20, x = 20, map = "Map4" }, new Data { y = 20, x = 20, map = "Map0" });
         }
 
         public void AddGraph(int map1, int map2, Data map1to2, Data map2to1)

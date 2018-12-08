@@ -5,3 +5,10 @@ D:\Year_2\C Sharp\Bestty\Bestty\Bestty\obj\Debug\Bestty.csprojAssemblyReference.
 D:\Year_2\C Sharp\Bestty\Bestty\Bestty\obj\Debug\Bestty.csproj.CoreCompileInputs.cache
 D:\Year_2\C Sharp\Bestty\Bestty\Bestty\obj\Debug\Bestty.exe
 D:\Year_2\C Sharp\Bestty\Bestty\Bestty\obj\Debug\Bestty.pdb
+D:\Year_2\C Sharp\CSharp61_AssignmentLast\CSharp61_AssignmentLast\Bestty\Bestty\bin\Debug\Bestty.exe.config
+D:\Year_2\C Sharp\CSharp61_AssignmentLast\CSharp61_AssignmentLast\Bestty\Bestty\bin\Debug\Bestty.exe
+D:\Year_2\C Sharp\CSharp61_AssignmentLast\CSharp61_AssignmentLast\Bestty\Bestty\bin\Debug\Bestty.pdb
+D:\Year_2\C Sharp\CSharp61_AssignmentLast\CSharp61_AssignmentLast\Bestty\Bestty\obj\Debug\Bestty.csprojAssemblyReference.cache
+D:\Year_2\C Sharp\CSharp61_AssignmentLast\CSharp61_AssignmentLast\Bestty\Bestty\obj\Debug\Bestty.csproj.CoreCompileInputs.cache
+D:\Year_2\C Sharp\CSharp61_AssignmentLast\CSharp61_AssignmentLast\Bestty\Bestty\obj\Debug\Bestty.exe
+D:\Year_2\C Sharp\CSharp61_AssignmentLast\CSharp61_AssignmentLast\Bestty\Bestty\obj\Debug\Bestty.pdb

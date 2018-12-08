@@ -81,14 +81,6 @@ namespace Bestty
             {
                 active = (state)(Map2);
             }
-            else if (active == Map0 && Player.inMap == "Map3")
-            {
-                active = (state)(Map3);
-            }
-            else if (active == Map0 && Player.inMap == "Map4")
-            {
-                active = (state)(Map4);
-            }
 
             else if (active == Map1 && Player.inMap == "Map1")
             {
@@ -98,28 +90,12 @@ namespace Bestty
             {
                 active = (state)(Map2);
             }
-            else if (active == Map3 && Player.inMap == "Map3")
-            {
-                active = (state)(Map3);
-            }
-            else if (active == Map4 && Player.inMap == "Map4")
-            {
-                active = (state)(Map4);
-            }
 
             else if (active == Map1 && Player.inMap == "Map0")
             {
                 active = (state)(Map0);
             }
             else if (active == Map2 && Player.inMap == "Map0")
-            {
-                active = (state)(Map0);
-            }
-            else if (active == Map3 && Player.inMap == "Map0")
-            {
-                active = (state)(Map0);
-            }
-            else if (active == Map4 && Player.inMap == "Map0")
             {
                 active = (state)(Map0);
             }
@@ -131,8 +107,6 @@ namespace Bestty
         {
             Map.map[5, 5] = "M1";
             Map.map[5, 20] = "M2";
-            Map.map[20, 5] = "M3";
-            Map.map[20, 20] = "M4";
 
         }
         public void Map1()
@@ -163,14 +137,6 @@ namespace Bestty
                     Map.Clean();
                 }
             }
-        }
-        public void Map3()
-        {
-            Map.map[20, 5] = "M0";
-        }
-        public void Map4()
-        {
-            Map.map[20, 20] = "M0";
         }
     }
 }
