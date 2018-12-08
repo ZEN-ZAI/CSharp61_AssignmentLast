@@ -13,7 +13,7 @@ namespace Bestty
             Map Map = new Map(25);
             Player Player = new Player("BB") { Map = Map };
             
-            InputHandle Input_Handle = new InputHandle { Map = Map, Player = Player };
+            InputHandle InputHandle = new InputHandle { Map = Map, Player = Player };
             Graph Graph = new Graph();
             GameSystem GameSystem = new GameSystem() { Map = Map, Player = Player , Graph  = Graph };
             Display Display = new Display { GameSystem = GameSystem };
@@ -23,9 +23,9 @@ namespace Bestty
             while (true)
             {
 
-                if (Console.KeyAvailable == true)
+                if (Console.KeyAvailable == true && GameSystem.active != GameSystem.End)
                 {
-                    Input_Handle.myInputHandle();
+                    InputHandle.myInputHandle();
                     GameSystem.Update();
                     Display.MyDisplay(30);
                 }

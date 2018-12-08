@@ -54,14 +54,6 @@ namespace Bestty
             {
                 CheckingMap(2);
             }
-            else if (Player.inMap == "Map3")
-            {
-                CheckingMap(3);
-            }
-            else if (Player.inMap == "Map4")
-            {
-                CheckingMap(4);
-            }
 
 
             WarpPosition();
@@ -80,6 +72,10 @@ namespace Bestty
             else if (active == Map0 && Player.inMap == "Map2")
             {
                 active = (state)(Map2);
+            }
+            else if (active == Map0 && Player.inMap == "End")
+            {
+                active = (state)(End);
             }
 
             else if (active == Map1 && Player.inMap == "Map1")
@@ -103,10 +99,27 @@ namespace Bestty
             active();
         }
 
+        public void End()
+        {
+            Map.Clean();
+            Console.WriteLine();
+            Console.WriteLine("                   -- FINISH --");
+        }
+
         public void Map0()
         {
             Map.map[5, 5] = "M1";
             Map.map[5, 20] = "M2";
+
+            if (Player.key == Player.allkey)
+            {
+                Map.map[22, 12] = "><";
+
+                if (Player.positionY == 22 && Player.positionX == 12)
+                {
+                    Player.inMap = "End";
+                }
+            }
 
         }
         public void Map1()
@@ -120,6 +133,7 @@ namespace Bestty
                 if (Player.positionY == 14 && Player.positionX == 7)
                 {
                     Player.keyM1 = true;
+                    Player.key++;
                     Map.Clean();
                 }
             }
@@ -130,10 +144,11 @@ namespace Bestty
 
             if (!Player.keyM2)
             {
-                Map.map[23, 23] = "-+";
-                if (Player.positionY == 23 && Player.positionX == 23)
+                Map.map[22, 22] = "-+";
+                if (Player.positionY == 22 && Player.positionX == 22)
                 {
                     Player.keyM2 = true;
+                    Player.key++;
                     Map.Clean();
                 }
             }

@@ -19,6 +19,8 @@ namespace Bestty
 
         public bool keyM1 = false;
         public bool keyM2 = false;
+        public int key;
+        public int allkey = 2;
 
         public Player(string character)
         {
@@ -39,7 +41,8 @@ namespace Bestty
 
         public void Display()
         {
-            Console.WriteLine("Player in Map: "+inMap);
+            Console.WriteLine();
+            Console.WriteLine("Player in Map: " + inMap + " | Key: " + key + "/" + allkey);
         }
         
     }
