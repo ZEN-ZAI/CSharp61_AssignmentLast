@@ -28,8 +28,8 @@ namespace Pepsi
 
         public void Setup()
         {
-            Player.inMap = "Stage3";
-            active = (state)(Stage3);
+            Player.inMap = "StageStart";
+            active = (state)(StageStart);
             active();
 
         }
