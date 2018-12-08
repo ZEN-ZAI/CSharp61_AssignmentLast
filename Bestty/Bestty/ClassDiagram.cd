@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bestty.Program">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bestty.Display">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Display.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameSystem" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bestty.GameSystem">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Bestty.GameSystem.state" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEQAAALwCRAAAAAAAAAAAAAAAAAAAAgAAAAAIQAAAAA=</HashCode>
+      <FileName>GameSystem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Player" />
+      <Property Name="Map" />
+      <Property Name="Graph" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bestty.Graph">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bestty.InputHandle">
+    <Position X="6.5" Y="9.75" Width="1.5" />
+    <AssociationLine Name="Player" Type="Bestty.Player" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.578" Y="9.75" />
+        <Point X="7.578" Y="9.375" />
+        <Point X="9.688" Y="9.375" />
+        <Point X="9.688" Y="8.238" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAA=</HashCode>
+      <FileName>InputHandle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Map" />
+      <Property Name="Player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bestty.Map">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAEAAAAAAAAgAAAAAAAAAAIAAKAAwAAAAAAAAAQAA=</HashCode>
+      <FileName>Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bestty.Player">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIYAAAAADAAwACAAAAAIQAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Map" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
