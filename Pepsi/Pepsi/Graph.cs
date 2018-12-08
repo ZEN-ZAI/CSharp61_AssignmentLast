@@ -23,7 +23,7 @@ namespace Pepsi
             AddGraph(0, 1, new Data { y = 20, x = 37, map = "Stage1" }, new Data { y = 19, x = 2, map = "StageStart" });
             AddGraph(1, 2, new Data { y = 20, x = 37, map = "Stage2" }, new Data { y = 19, x = 2, map = "Stage1" });
             AddGraph(2, 3, new Data { y = 37, x = 19, map = "Stage3" }, new Data { y = 2, x = 19, map = "Stage2" });
-            AddGraph(3, 4, new Data { y = 20, x = 2, map = "StageBoss" }, new Data { y = 0, x = 0, map = "Stage3" });
+            AddGraph(3, 4, new Data { y = 20, x = 2, map = "StageBoss" }, new Data { y = 2, x = 19, map = "Stage3" });
         }
 
         public void AddGraph(int map1, int map2, Data map1to2, Data map2to1)

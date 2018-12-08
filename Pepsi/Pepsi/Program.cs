@@ -15,12 +15,15 @@ namespace Pepsi
             Map Map = new Map(40);
             Player Player = new Player("PS") { Map = Map };
             
-            InputHandle Input_Handle = new InputHandle { Map = Map, Player = Player };
+            
             Graph Graph = new Graph();
             GameSystem GameSystem = new GameSystem() { Map = Map, Player = Player , Graph  = Graph };
+            InputHandle Input_Handle = new InputHandle { Map = Map, Player = Player , GameSystem =GameSystem};
             Display Display = new Display { GameSystem = GameSystem };
 
             GameSystem.Setup();
+            
+
             while (true)
             {
 
@@ -34,7 +37,7 @@ namespace Pepsi
                 {
                     GameSystem.Update();
                     Player.dont_move();
-                    Display.MyDisplay(10);
+                    Display.MyDisplay(5);
                 }
 
             }

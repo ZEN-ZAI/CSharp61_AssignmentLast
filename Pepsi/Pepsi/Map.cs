@@ -10,12 +10,6 @@ namespace Pepsi
     {
         public string[,] map;
 
-        public int keyPositionX;
-        public int keyPositionY;
-
-        public int ExitPositionX;
-        public int ExitPositionY;
-
         public Map(int size)
         {
             map = new string[size, size];
@@ -49,20 +43,6 @@ namespace Pepsi
             }
         }
 
-        public void insertKey(int x, int y)
-        {
-            keyPositionX = x;
-            keyPositionY = y;
-            map[y, x] = " K";
-        }
-
-        public void insertExit(int x, int y)
-        {
-            ExitPositionX = x;
-            ExitPositionY = y;
-            map[y, x] = " X";
-        }
-
         public void InsertCharacter(int positionX, int positionY, string character)
         {
             map[positionY, positionX] = character;
@@ -74,9 +54,58 @@ namespace Pepsi
             {
                 for (int j = 0; j < map.GetLength(1); j++)
                 {
-                    Console.Write(map[i, j]);
+                    if (map[i, j] == "  ")
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                        Console.Write(map[i, j]);
+                    }
+                    else if (map[i, j] == "ST" ||map[i, j] == "S1" || map[i, j] == "S2" || map[i, j] == "S3" || map[i, j] == "SB")
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Console.Write(map[i, j]);
+                    }
+                    else if(map[i, j] == "##")
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.BackgroundColor = ConsoleColor.White;
+                        Console.Write(map[i, j]);
+                    }
+                    else if (map[i, j] == "PS")
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                        Console.Write(map[i, j]);
+                    }
+                    else if (map[i, j] == "MO")
+                    {
+                        Console.ForegroundColor = ConsoleColor.Black;
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                        Console.Write(map[i, j]);
+                    }
+                    else if (map[i, j] == "BO")
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkBlue;
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                        Console.Write(map[i, j]);
+                    }
+                    else if (map[i, j] == "La")
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.Write(map[i, j]);
+                    }
+                    else
+                    {
+                        Console.ResetColor();
+                        Console.Write(map[i, j]);
+                        
+                    }
+
                 }
                 Console.WriteLine();
+                Console.ResetColor();
             }
         }
     }
